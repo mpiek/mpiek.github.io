@@ -1,79 +1,64 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
- <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-        header h1 {
-            margin: 0;
-            padding: 0 20px;
-        }
-        section {
-            margin: 20px 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthijs Piek | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/5296263" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-github {
-  background: #3B5998;
-  color: white;
-}
-
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Matthijs Piek</h1>
-        </div>
-    </header>
-    <section class="container">
-        <!-- Add these buttons -->
-        <a href="https://github.com/mpiek" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/mjpiek" class="fa fa-linkedin"></a>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </section>
-    <footer>
-        <p></p>
-    </footer>
-</body>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars.githubusercontent.com/u/5296263" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://avatars.githubusercontent.com/u/5296263" target="_blank">
+            <img src="https://avatars.githubusercontent.com/u/5296263" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          One must imagine Sisyphus happy
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @algathonix
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://github.com/mpiek" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      <a class="link" href="https://www.linkedin.com/in/mjpiek" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.instagram.com/algathonix" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://www.goodreads.com/user/show/45854897-matthijs-piek" target="_blank">
+        <i class="fab fa-goodreads">&nbsp;</i>Goodreads
+      </a>
+    </div>
+
+    <div id="hashtag">
+      <i class="fas fa-dove"></i>
+    </div>
+  </body>
 </html>
